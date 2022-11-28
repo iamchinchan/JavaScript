@@ -1,0 +1,11 @@
+-> linear-gradient
+-> vh : dimension like px, how it works and when should be used?
+-> symbol, big int
+-> null, undefined actual difference 
+-> template strings
+-> global, let, const, var actual difference and scoped
+-> parseiInt(), parseFloat()
+-> transpiling, polyfilling: processes to convert js of diff releases, like from Es6 modern js code to Es5
+-> babel
+-> Es6 compatibility table
+-> 

@@ -1,0 +1,12 @@
+-> // let num = 1000;
+// while (num) {
+//   console.log(10 + 25 + 61 - 20);
+//   num = num - 1;
+// }
+// let js = "amazing";
+// if (js === "amazing") {
+//   alert("hi js is lovely!!");
+// }
+why alert behave like this?
+
+->
