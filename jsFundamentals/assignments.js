@@ -1,3 +1,4 @@
+"use strict";
 // const country = "India";
 // const continent = "Asia";
 // let population = 1412;

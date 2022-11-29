@@ -9,4 +9,11 @@
 // }
 why alert behave like this?
 
-->
+-> can we add values oif dif data types in a js array? yes we can 
+-> how new works exactlty behind the scenes in js? and static vs dynamic variables?
+-> let num = new Number(5);
+   console.log(num);
+   what is this behaviour of normal variables and new keyword
+
+-> how non -primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
+-> 

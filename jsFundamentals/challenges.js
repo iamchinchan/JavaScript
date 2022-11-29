@@ -1,3 +1,4 @@
+"use strict";
 // coding challenge 4:
 
 // const billValue = 430;

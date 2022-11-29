@@ -10,12 +10,12 @@ programming styls: imperative, declarative: diff ways of structuring our code.
 
 core  tech of web: HTML, CSS, JAVASCRIPT
 
-JS: real pg lang of web, to add dyanmic and inetractive effects on webn page or web apps., 
+JS: real pg lang of web, to add dyanmic and interactive effects on web page or web apps., 
 it allows to manupilate content and css, load data from remote servers, to make entire apps in the browsers which we call web apps.
 
 JS modern libraries and frameworks: Angular, React, Vue : all 100% based on JS
 js can be used outside of browsers like on a server which in the end is a computing machine
-so using  node.js(which is made on top of v8 js engine(to convert js code to machine code for machines to execute)) on the machine we can write js code for our back-end applications as well to handle api's and to comnnect with databse.
+so using  node.js(which is made on top of v8 js engine(to convert js code to machine code for machines to execute)) on the machine we can write js code for our back-end applications as well to handle api's and to connect with databse.
 and back-end application run on servers: which as i said is also connected to database: so js can be used on servers to make back -end apps we can say
 
 js: use for native mobile app(react native , ionic) or native desktop(elctron) application for any os out there
@@ -23,11 +23,11 @@ js: use for native mobile app(react native , ionic) or native desktop(elctron) a
 convention: camel case for variable names, uppercase all letters for constants: but it wont be considered as constant just by uppercase, 
 can start with $ or _ , but not with numbers, but can also contain numbers.
 dont use keywords, and should not use name is legal but we should not,
-we should not uise uppercase first letter for variable names, as we use the same for classes declarations, not illegal but to maintain a convention.
+we should not use uppercase first letter for variable names, as we use the same for classes declarations, not illegal but to maintain a convention.
 
-number, stirng, boolean, undefined, symbol, big int, null
+number, string, boolean, undefined, symbol, big int, null
 
-in js values hjas types not variables,
+in js values has types not variables,
 same variable can store diff type of values in 1 code instance
 
 dynamic typing: change data type of value holding inside a variable
@@ -65,9 +65,10 @@ we can ignore all 3: let, const, var, and do like this:
 name = "jatin"
 console.log(name);
 but it will create a property on global object
-this variable wont be create d in so called scoped
+this variable wont be created in so called scoped block
 
-all the variables can be visible in browser console  while we are running it in the browser
+all the variables can be visible in browser console  while we the file is running in the browser
+
 operators:
 mathematical: +,-,*,/,%, **
 + can be used to concatenate 2 strings
@@ -76,12 +77,12 @@ assigment operators: =,++,--, +=, -=,....
 
 comparison operators: booelan result in the end: >, < ,  <=, >=
 equality operators: ==, ===
-logical operators: 
+logical operators: &&, ||
 
 
 template literals for bis string using backticks ``
 
-\n for new line, and if to write ion a same way in editror then use \n\ or `` (template literal)
+\n for new line, and if to write in a same way in editor then use \n\ or `` (template literal)
 
 type conversion and type coercion:
 NaN: not a number
@@ -114,6 +115,71 @@ console.log(`I like to drink ${age >= 18 ? "Wine 🍷🍾" : "milk 🥛"}`);
 
 transpiling, polyfilling: processes to convert js of diff releases, like from Es6 modern js code to Es5
 using babel for plyfilling: still to learn how our modern js code will  run in production in user's desktop using old versions of browsers which does not have implementation according to the latest release of js , which we have used in our code already
+
 EsNext: future planned releases for js
+
 Es6 compatibility table
+
+ecmascript link for js help: https://tc39.es/ecma262/#sec-islooselyequal
+
+more on ternary conditonal operator: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+////////////////////////
+More fundamentals:-
+//////////////////////
+
+'use strict'; for strict mode
+
+calling, running, invoking thje function
+
+
+function noparamsnoreturn(){
+  //console
+}
+noparamsnoreturn(); // this will do only console and wont generate any result or value as there is no return in the function itself , so it produces undefined
+
+so : console.log(noparamsnoreturn()); will also console undefined in the console window
+
+fn declaration and fn expression:
+ anonymoous function: fn without a  name
+
+
+ expression produces a value
+ and we can use fn as an expression to br a value for  a variable like:
+ const fnvar = function expression
+so fnvar(lfs var) will hold the value which is an function expression
+in js functions are like values
+
+fn defined using fn declarations can be acces before initialization but fn expressions cannot
+
+arrow function: ES6 feature : shorter form of function expression :  good for 1 liner functions, but we can use multiple statementds using {}, we can omit reutn in 1 liner functions, we can also use multiple parametr using ()
+ex: 
+const fnvar = parametr => return statatement;
+arrow functions do not have this keyword to use, so not a good idea to use these all the time ignoring fn declaration and function expressions which both do have thid keyword to use.
+
+console.log is an js inbuilt function.
+
+strings in js casn be written boith in '', or in "", as there is not such thig as character data type in js as we have in C++
+
+data structure: 
+
+Arrays: index from 0
+2 ways to drfine arrays:
+literal syntax, using new keyword as below
+const years= new Array(value of any type,...);
+arrays are mutable even whenn declared as const, more in sec: 8 -> hopefully, it happens bcz of some reason the way they are stored in the memory
+but we cant change the entire array if defined as const, by entire i mean re writing assignmentt statement to an array (not for an particular index, bcz that works as told above)
+
+we can use varibale names directly inside an array
+
+
+
+
+
+
+
+Objects:  
+
+
+
 
