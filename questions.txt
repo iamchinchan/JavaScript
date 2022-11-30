@@ -16,4 +16,5 @@ why alert behave like this?
    what is this behaviour of normal variables and new keyword
 
 -> how non -primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
+-> can we add ternary operator inside console.log? yes we can 
 -> 

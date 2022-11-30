@@ -166,20 +166,61 @@ data structure:
 Arrays: index from 0
 2 ways to drfine arrays:
 literal syntax, using new keyword as below
-const years= new Array(value of any type,...);
+const years= new Array(value of any type,...);  :-> Array() is a fn
 arrays are mutable even whenn declared as const, more in sec: 8 -> hopefully, it happens bcz of some reason the way they are stored in the memory
 but we cant change the entire array if defined as const, by entire i mean re writing assignmentt statement to an array (not for an particular index, bcz that works as told above)
+arrayName.length
+arrayName[expression]
 
+js built in functions to use on array: called array methods
+
+array methods:
+push(element): push to the end :returne lenght of new array.
+unshift(element) :  push to the front :returne lenght of new array.
+.pop() : returns removed elements
+.shift() : return element that was removed
+indexOf(element): return index at which this element is stored(index starts from 0), -1 if not present in the Array. : no type coercion, strict matching
+.includes(element) : returns boolean : no type coercion, strict matching
 we can use varibale names directly inside an array
 
+Objects data str in js:  
 
 
+key value pairs, value can be an  expression also
+const objectVar = {
+  key value pairs
+}
+this is called a object literal syntax
 
+to use variable's value as an key in the object use [] around variable name while using it as the key:
+most useful when we will have to change formats of our data: as I did while helping divesh, fileName: formatDivesh.js in jsFundamentals folder.
 
+const name1 = "firstname";
+const objectVar = new Object({
+  [name1]: "jatin goyal",
+});
 
+values can be any type of expressions/ values 
+so they can be an array, an object or any expression resulting in a value of any type, but should not be a statment(only expressions are allowed)
 
-Objects:  
+object data update and retreival using dot(.) and bracket[] operator
 
+objectVar.key : . is an operator
+objectVar[`key`] : [] is also an operator: [] can contain any expression whose value must be then equivalent to one of the key in the object already present there , but a string type
 
+objectVar.notPresentKey / objectVar.notPresentKey = undefined
 
+we can also add new properties to the object using both the . and [] operators
+
+. and [] have really high precedence and both of them have left to right associativity
+so that why : objectVar.arrayKey.length works fine as we expect: objectVar.arrayKey is solved first then we have array on which we call length function(inbuilt array method) so final result is length of the array which is a kay value pair inside an object named objectVar
+
+we can also add fcuntions(expression functions) to object, as we can functionss as values in js;
+any function attachedd to a object is called a method.
+
+objectVar.method(parameters) / objectVar['methodName'](parameters); : bcz of precedence, so first that key will be retreied which is a function then we calll it using () adding parameters if there are any expected.
+
+in methods, js gives us access to variable called this; not sure if arrow functions behave in the same way or not: acc to my testing this was not working with arrow method when i tried it in object, not sure about other cases
+
+this keyword/variable: basically is object on which the method is called,  = object calling the method
 
