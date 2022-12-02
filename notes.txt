@@ -163,7 +163,9 @@ strings in js casn be written boith in '', or in "", as there is not such thig a
 
 data structure: 
 
-Arrays: index from 0
+Arrays:
+
+ index from 0
 2 ways to drfine arrays:
 literal syntax, using new keyword as below
 const years= new Array(value of any type,...);  :-> Array() is a fn
@@ -174,6 +176,7 @@ arrayName[expression]
 
 js built in functions to use on array: called array methods
 
+in an empty array we can direct add value to any index and it will dynamically add that value in the array making other previous index values(if there are any) undefined.:code ex in script.js
 array methods:
 push(element): push to the end :returne lenght of new array.
 unshift(element) :  push to the front :returne lenght of new array.
@@ -191,6 +194,21 @@ const objectVar = {
   key value pairs
 }
 this is called a object literal syntax
+
+value can be a varlable or a fn in a object
+const var=10;//or other value of any type(araay , object, number, any expression, also includes functions(any type dec or expressions)))
+function add(a, b) { // const add = function(a,b)
+  return a + b;
+}
+const testObject = {
+  a: 5,
+  b: 7,
+  add: add,
+};
+console.log(testObject);
+console.log(testObject.add(testObject.a, testObject.b));//12
+console.log(testObject.add(4, 9));//13
+
 
 to use variable's value as an key in the object use [] around variable name while using it as the key:
 most useful when we will have to change formats of our data: as I did while helping divesh, fileName: formatDivesh.js in jsFundamentals folder.
@@ -224,3 +242,9 @@ in methods, js gives us access to variable called this; not sure if arrow functi
 
 this keyword/variable: basically is object on which the method is called,  = object calling the method
 
+array's are itself object in the end: so type of arrayVariable: object
+More control structures:
+Loopings:
+
+for loop: have counters
+for is a statement kike an  if-else its not an expression

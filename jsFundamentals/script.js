@@ -129,3 +129,49 @@ jatin["instagram"] = "jatin7528";
 // console.log(jatin.getSummary); //ibject value: which is a function
 // console.log(jatin.getSummary(jatin)); // return value from function
 // console.log(jatin.getSummary()); // return value from function
+
+//type of array is:
+// const arrVar = [5, 4, 8, "d", [5, 6], { a: 5 }];
+// console.log(typeof arrVar); //object
+
+// const arrVar = [];
+// arrVar[5] = "om namaha shivay!";
+// console.log(arrVar);
+// console.log(arrVar[0], arrVar[5], arrVar[10]);
+// arrVar[10] = "Jai shree Krishna";
+// console.log(arrVar);
+
+// output:
+
+// (6) [empty × 5, 'om namaha shivay!']
+// undefined 'om namaha shivay!' undefined
+// (11) [empty × 5, 'om namaha shivay!', empty × 4, 'Jai shree Krishna']
+// 5: "om namaha shivay!"
+// 10: "Jai shree Krishna"
+// length: 11
+
+// function add(a, b) {
+//   return a + b;
+// }
+// const testObject = {
+//   a: 5,
+//   b: 7,
+//   add: add,
+// };
+// console.log(testObject);
+// console.log(testObject.add(testObject.a, testObject.b));
+// console.log(testObject.add(4, 9));
+
+// let data1 = { a: "b" };
+// let data2 = { c: "d", e: "f" };
+// const key1 = 10 > 11 ? "data1" : "data2";
+// console.log(`${[key1][0]}`);
+
+// iwant to print that object not string based on result
+
+// let dataObject = {
+//   data1: { a: "b" },
+//   data2: { c: "d", e: "f" },
+// };
+// const key2 = 10 > 11 ? "data1" : "data2";
+// console.log(dataObject[key2]);

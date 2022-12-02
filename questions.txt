@@ -17,4 +17,13 @@ why alert behave like this?
 
 -> how non -primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
 -> can we add ternary operator inside console.log? yes we can 
+-> how to set precision of an decimal number in javascript?
 -> 
+let data1 = { a: "b" };
+let data2 = { c: "d", e: "f" };
+const key = 10 > 11 ? "data1" : "data2";
+console.log(`${[key][0]}`);
+// iwant to print that object not string based on result
+question i asked Divesh on 1-Dec 2022
+
+->

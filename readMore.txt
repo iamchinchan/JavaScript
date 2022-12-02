@@ -13,5 +13,4 @@
 -> try toi use ctr+D to move to next occurence
 -> new keyword, a nd creating dynamic memory
 -> how on -primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
-
 -> 
