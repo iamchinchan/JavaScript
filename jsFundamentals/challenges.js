@@ -58,3 +58,14 @@
 //     `Both ${mark.fullName} and ${john.fullName} have same BMI's {${mark.bmi}}`
 //   );
 // }
+
+// for .prettierrc testing
+// const section = fol => 5;
+// console.log();
+
+// function score() {
+//   const varOject = {
+//     // sex: prompt("how many times?"),
+//   };
+// }
+// score();

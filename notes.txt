@@ -186,6 +186,8 @@ indexOf(element): return index at which this element is stored(index starts from
 .includes(element) : returns boolean : no type coercion, strict matching
 we can use varibale names directly inside an array
 
+const array3= array1.concat(array2);
+
 Objects data str in js:  
 
 
@@ -243,8 +245,25 @@ in methods, js gives us access to variable called this; not sure if arrow functi
 this keyword/variable: basically is object on which the method is called,  = object calling the method
 
 array's are itself object in the end: so type of arrayVariable: object
+
+if an object uis defined with a value having prompt then it will ask for value while going through that code
+
 More control structures:
 Loopings:
 
 for loop: have counters
 for is a statement kike an  if-else its not an expression
+
+
+Debugging:
+
+console.warn
+console.error
+console.table
+debugger;
+Array.isArray()
+
+HTML: button is an inline-block element
+input element and type attribute on it
+form : semantic element for forms
+
