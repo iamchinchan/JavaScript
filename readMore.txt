@@ -2,15 +2,15 @@
 -> vh : dimension like px, how it works and when should be used?
 -> symbol, big int
 -> null, undefined actual difference 
--> template strings
--> global, let, const, var actual difference and scoped
+-> template strings //learnt in course itself `` called template literals
+-> global, let, const, var actual difference and scopes
 -> parseiInt(), parseFloat()
 -> transpiling, polyfilling: processes to convert js of diff releases, like from Es6 modern js code to Es5
 -> babel
 -> Es6 compatibility table
 -> hoisting process : fn declaration and fn expression diff behaviour as dec 1 can be used before initialization but fn exp can not be used before it is initialized
 -> this keyword, why not av available in arrow functions?
--> try toi use ctr+D to move to next occurence
--> new keyword, a nd creating dynamic memory
--> how on -primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
+-> try to use ctr+D to move to next occurence
+-> new keyword, and creating dynamic memory
+-> how non-primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
 -> 

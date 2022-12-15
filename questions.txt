@@ -9,7 +9,7 @@
 // }
 why alert behave like this?
 
--> can we add values oif dif data types in a js array? yes we can 
+-> can we add values of dif data types in a js array? yes we can 
 -> how new works exactlty behind the scenes in js? and static vs dynamic variables?
 -> let num = new Number(5);
    console.log(num);
@@ -23,7 +23,7 @@ let data1 = { a: "b" };
 let data2 = { c: "d", e: "f" };
 const key = 10 > 11 ? "data1" : "data2";
 console.log(`${[key][0]}`);
-// iwant to print that object not string based on result
+// i want to print that object not string based on result
 question i asked Divesh on 1-Dec 2022
 
-->
+->Array.isArray() : in this is Array a methid or a class?

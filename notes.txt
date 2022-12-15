@@ -6,23 +6,25 @@ alert("")
 we can do calulations in console
 we have strings in JAVASCRIPT
 
-programming styls: imperative, declarative: diff ways of structuring our code.
+programming styles: imperative, declarative: diff ways of structuring our code.
 
 core  tech of web: HTML, CSS, JAVASCRIPT
 
-JS: real pg lang of web, to add dyanmic and interactive effects on web page or web apps., 
+JS: real programming language of web, to add dyanmic and interactive effects on web page or web apps., 
 it allows to manupilate content and css, load data from remote servers, to make entire apps in the browsers which we call web apps.
 
 JS modern libraries and frameworks: Angular, React, Vue : all 100% based on JS
 js can be used outside of browsers like on a server which in the end is a computing machine
-so using  node.js(which is made on top of v8 js engine(to convert js code to machine code for machines to execute)) on the machine we can write js code for our back-end applications as well to handle api's and to connect with databse.
+so using  node.js(which is made on top of v8 js engine(to convert js code to machine code for machines to execute)) on the machine we can write js code for our back-end applications as well to handle api's and to connect with database.
 and back-end application run on servers: which as i said is also connected to database: so js can be used on servers to make back -end apps we can say
 
 js: use for native mobile app(react native , ionic) or native desktop(elctron) application for any os out there
 
 convention: camel case for variable names, uppercase all letters for constants: but it wont be considered as constant just by uppercase, 
+
+rules:
 can start with $ or _ , but not with numbers, but can also contain numbers.
-dont use keywords, and should not use name is legal but we should not,
+dont use keywords, and should not use "name", is legal but we should not,
 we should not use uppercase first letter for variable names, as we use the same for classes declarations, not illegal but to maintain a convention.
 
 number, string, boolean, undefined, symbol, big int, null
@@ -47,6 +49,7 @@ console.log("type of val is: ", typeof val);
 console.log("type of null is: ", typeof null);
 
 ***********************************
+type of string is: string
 assignments.js:6 type of undefined is:  undefined
 assignments.js:8 type of declare is:  undefined
 assignments.js:9 value of declare is:  undefined
@@ -67,7 +70,7 @@ console.log(name);
 but it will create a property on global object
 this variable wont be created in so called scoped block
 
-all the variables can be visible in browser console  while we the file is running in the browser
+all the variables can be visible in browser console  while the file is running in the browser
 
 operators:
 mathematical: +,-,*,/,%, **
@@ -94,9 +97,9 @@ prompt("");
 
 diff operator:  !==, !=
 
-if in prompt nothing is enetered then ot taked 0 as input not undefined or null if Number(prompt()) is used.
+if in prompt nothing is entered then it takes 0 as input not undefined or null if Number(prompt()) is used.
 and it will take emplty string normally and type will be string : is used as this: prompt(); and clicked ok
-and it will contain null as valuer and type of object if empty but clicked cancel using normal prompt();
+and it will contain null as value and type of object if empty but clicked cancel using normal prompt();
 so make sure to check every possibility before implementing whole code
 
 5 falsy values: undefined, null, 0, NaN, ''
@@ -107,7 +110,7 @@ default can also run if break is missing till the actual case which is matching
 
 ternary operators: expression? true code : falsy code
 
-and conditonal operators can be used as an expressions as they just produces values, and we can also use ternary op with them in am expression, but we have to make sure to not use statements as an ?/: part of ternary operator
+and conditonal operators can be used as an expressions as they just produces values, and we can also use ternary op with them in an expression, but we have to make sure to not use statements as an ?/: part of ternary operator
 
 for ex: we can do like this:
 const age = 10;
@@ -130,7 +133,7 @@ More fundamentals:-
 
 'use strict'; for strict mode
 
-calling, running, invoking thje function
+calling, running, invoking the function
 
 
 function noparamsnoreturn(){
@@ -155,18 +158,18 @@ fn defined using fn declarations can be acces before initialization but fn expre
 arrow function: ES6 feature : shorter form of function expression :  good for 1 liner functions, but we can use multiple statementds using {}, we can omit reutn in 1 liner functions, we can also use multiple parametr using ()
 ex: 
 const fnvar = parametr => return statatement;
-arrow functions do not have this keyword to use, so not a good idea to use these all the time ignoring fn declaration and function expressions which both do have thid keyword to use.
+arrow functions do not have this keyword to use, so not a good idea to use these all the time ignoring fn declaration and function expressions which both do have (this) keyword to use.
 
 console.log is an js inbuilt function.
 
-strings in js casn be written boith in '', or in "", as there is not such thig as character data type in js as we have in C++
+strings in js can be written boith in '', or in "", as there is not such thig as character data type in js as we have in C++
 
 data structure: 
 
 Arrays:
 
  index from 0
-2 ways to drfine arrays:
+2 ways to define arrays:
 literal syntax, using new keyword as below
 const years= new Array(value of any type,...);  :-> Array() is a fn
 arrays are mutable even whenn declared as const, more in sec: 8 -> hopefully, it happens bcz of some reason the way they are stored in the memory
@@ -178,14 +181,15 @@ js built in functions to use on array: called array methods
 
 in an empty array we can direct add value to any index and it will dynamically add that value in the array making other previous index values(if there are any) undefined.:code ex in script.js
 array methods:
-push(element): push to the end :returne lenght of new array.
-unshift(element) :  push to the front :returne lenght of new array.
-.pop() : returns removed elements
-.shift() : return element that was removed
+push(element): push to the end : return lenght of new array.
+unshift(element) :  push to the front : return lenght of new array.
+.pop() : returns removed element : from last
+.shift() : return element that was removed :  from front
 indexOf(element): return index at which this element is stored(index starts from 0), -1 if not present in the Array. : no type coercion, strict matching
 .includes(element) : returns boolean : no type coercion, strict matching
 we can use varibale names directly inside an array
-
+conat varNam = 44;
+const arrVar=[varNam,"+6",50]
 const array3= array1.concat(array2);
 
 Objects data str in js:  
@@ -226,33 +230,34 @@ so they can be an array, an object or any expression resulting in a value of any
 object data update and retreival using dot(.) and bracket[] operator
 
 objectVar.key : . is an operator
-objectVar[`key`] : [] is also an operator: [] can contain any expression whose value must be then equivalent to one of the key in the object already present there , but a string type
+objectVar[`key`] : [] is also an operator: [] can contain any expression whose value must be then equivalent to one of the key in the object already present there , but a string type , so we can use `` most helpful here
 
-objectVar.notPresentKey / objectVar.notPresentKey = undefined
+objectVar.notPresentKey / objectVar[notPresentKey] = undefined
 
 we can also add new properties to the object using both the . and [] operators
 
 . and [] have really high precedence and both of them have left to right associativity
-so that why : objectVar.arrayKey.length works fine as we expect: objectVar.arrayKey is solved first then we have array on which we call length function(inbuilt array method) so final result is length of the array which is a kay value pair inside an object named objectVar
 
-we can also add fcuntions(expression functions) to object, as we can functionss as values in js;
+so that why : objectVar.arrayKey.length works fine as we expect: objectVar.arrayKey is solved first then we have array on which we call length function(inbuilt array method) so final result is length of the array which is a key value pair inside an object named objectVar
+
+we can also add fcuntions(expression functions) to object, as we can use functions as values in js;
 any function attachedd to a object is called a method.
 
-objectVar.method(parameters) / objectVar['methodName'](parameters); : bcz of precedence, so first that key will be retreied which is a function then we calll it using () adding parameters if there are any expected.
+objectVar.method(parameters) / objectVar['methodName'](parameters); : bcz of precedence, so first that key will be retreied which is a function then we call it using () adding parameters if there are any expected.
 
-in methods, js gives us access to variable called this; not sure if arrow functions behave in the same way or not: acc to my testing this was not working with arrow method when i tried it in object, not sure about other cases
+in methods, js gives us access to variable called this; not sure if arrow functions behave in the same way or not: acc to my testing this was not working with arrow method when i tried it in object, not sure about other cases: more in sec 7 or 8 of course 
 
 this keyword/variable: basically is object on which the method is called,  = object calling the method
 
 array's are itself object in the end: so type of arrayVariable: object
 
-if an object uis defined with a value having prompt then it will ask for value while going through that code
+if an object is defined with a value having prompt then it will ask for value while going through that code
 
 More control structures:
 Loopings:
 
 for loop: have counters
-for is a statement kike an  if-else its not an expression
+for is a statement like an  if-else, its not an expression
 
 
 Debugging:
@@ -261,9 +266,12 @@ console.warn
 console.error
 console.table
 debugger;
+
+
 Array.isArray()
 
 HTML: button is an inline-block element
 input element and type attribute on it
 form : semantic element for forms
+
 
