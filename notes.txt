@@ -274,4 +274,182 @@ HTML: button is an inline-block element
 input element and type attribute on it
 form : semantic element for forms
 
+/**********************DOM and Events fundamentals************************/
+
+js can interact with real websites/web pages
+
+document : is an object itself which is a entry point to the entire DOM which is Dociument object model : a complete representation of HTMl document : tree like a str to represent the HTMl elements ans texts too
+
+each of them acts as a node which we can then access via web api's provided by browsers to us written in js according to the DOM specification, so that every browser are on common platform
+
+so DOM and DOM methods like querySelector() are not a partof js , but are part of Web API's just like timers and fetch and all of these web API's an be used in our js code that we write to manipulate the html elements, text , css styling and html attributes in short to interact with our real webpages
+
+querySelector(selector in a string format and can be used just like in CSS)
+for ex: '.class' or '#id' and more ways to select an element
+
+.textContent method to get the text fron an selected element using querySelector maybe, but there are also other ways as well
+
+so DOM is kinda connection between out js code and the HTMl page being rendered in the browser
+
+we have a DOM tree similar to str of HTML elements and text as mentioned earlier
+
+DOM methods like querySelector are part of web API's not a syntax of JS language
+
+and Web APi's are libraries implemented by browsers in js itself for us users to be used in ouor code without any specific imports
+
+and with the help of these API's we can manipulate the actual HTMl elements of the webpage being rendered in the browser.
+
+****************Events and Event eventListeners:
+
+The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target. Common targets are Element , or its children, Document , and Window , but the target may be any object that supports events (such as XMLHttpRequest ).
+
+
+//**************************************//
+function expressions and arrow fns can be used in place of truthy and flasy values as follows: 
+
+const sd = 'y';
+// const newFnAdd = sd ? (a, b) => a + b : 'not done yet';
+const newFnAdd = sd
+  ? function (a, b) {
+      return a + b;
+    }
+  : 'not done yet';
+console.log(newFnAdd);
+const addVal = newFnAdd(5, 2);
+console.log(addVal);
+
+now imp thing is that fn declarations can alsobe used as values :
+const newFnAdd = sd
+  ? function addvar(a, b) {
+      return a + b;
+    }
+  : 'not done yet';
+   
+this is valid
+
+so all 3 types of fn learnt can be treated as values, so can be used in object as well as values and can be passed to another fn as arguements as well (check for fn declaration? added in questions filke as well : checked and yes we can add).
+
+fn's can be treated as values (all 3 type of fn's including declarations) and values are part of expressions, and so that fn's can be used as values and expression so can be used in ternary operators and can be passed into another fn as arguements
+
+till now only 1 diff encountered between dec and expression is thaat fn dec can be used before its declaration but fn expressions cannot be used before.
+
+The Math.random() method returns a random number from 0 (inclusive) up to but not including 1 (exclusive).
+
+querySelector is a method on objects , that we generally use on document object to receive element as a return value
+
+.textContent is a property of the elements which in turn themselves are objects like document is.
+
+we can also set the value or textContent property on elements.
+
+each HTML element is represented as DOM node in DOM
+
+we cannot set the entire elemnt but we can set textContent as whole element has more than just a text value/content.
+
+Anything happening on page is called an event and it can be of many types, like click, mouseover, keypress and many more and we can add event listneres in our js code to react to those events (something happening/changing in DOM state)
+
+event listeners wait for certain events.
+
+addEventListener is a method:
+
+The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target. Common targets are Element , or its children, Document , and Window , but the target may be any object that supports events (such as XMLHttpRequest ).
+
+addEventListener expects mainly 2 arguements ast: type of event and 2nd one is a function called event handler, as fn can be used as values, so this 2nd arguement is a fn passed in as a value: fn declaration can also be used not only fn expressions
+we generally pass the fn expressions and as we dont assign it to a variable we also call it here: anonymoous function.
+
+Math is a object provided by js to us and random(), trunc() these are methods available on the Math object.
+
+some variables are called state variables as they are part of the application state:
+and all the data relevant to the application is part of application and hence variables storing that data is called state variables.
+
+
+DOM methods and properties for DOM manipulate are part of web API's not js
+
+css property: 
+backdrop-filter: blur(3px);
+The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element.
+
+querySelectorAll method gives a nodeList , which can be treated like a Array , not an actual array but we can lopp through it like an array to access each node it contains.
+
+node.classList.remove/.add/.contains
+classList is a property on a node(in hsort its a API which provides us methods and values to use with the APi itself) and .remove/.add/.contains are methods on the classList property
+
+but how can we add methods on property which are then changing its  values(classes):
+more on classList: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+asked ques on udemy video number: 79 and 80
+
+The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list. Using classList is a convenient alternative to accessing an element's list of classes as a space-delimited string via element.className .
+
+js engine calls the handler fn as soon as event ocurs , we do not call the handler fn.
+
+keypress/down/up are global events: and we can listen them on whole document not on particular element.
+
+we ahve mainly 3 keypress events
+keydown : only when a key is hitted
+keypress: as long as key is pressed
+keyup : oonly when we lift the finger from the key after pressing it maye only for an instant
+
+Handler waits for an particular defined (in 1st arguement ) event to ocur , and whenever that event occurs js generates an object containing all the information about the event itself. then this object can be accessed by the event handler function and we can do that so by passing an parameter with any name in the handler fn itself then inside that handler fn we will get access to all the info about the event. All this is possible bcz its not us who call the handler fn but js engine itslef calls the fn on the event occurence so we just tell js that whenever this event ocurs pls pass the generated event object to handler fn while calling it.
+
+how nodeList is not an array: https://www.w3schools.com/jsref/dom_obj_html_nodelist.asp
+
+more on DOMTokenList: https://www.w3schools.com/jsref/dom_obj_html_domtokenlist.asp
+
+**********udemy response for classList property:*************
+ques: ClassList is a property and it has methods? how a read- only property can have methods on it ?
+
+In Video #80 working with classes, at 4.22 You said classList is a property and .remove/add/contains are all methods that can be applied on this property, firstly I am confused here about how a property can have methods that then change the property itself as we are removing/adding classes using these methods, and after a little research I found this line on MDN: "The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list."
+so how we can change the classes using classList property if it is an read only property, what exactly does it mean? and what is an DOMTokenList? I have seen this in console many times while working with WEB API:S
+and also on MDN, it is written that classList is a API, so whats exactly is a classList? an APi? a read- only property?
+pls explain and tell me the difference between these terms, property/DOM Property, API, DOMTokenList
+
+Answer: 
+
+Properties can store different data types, for example, numbers, strings or objects.
+
+For example, the object below has a property called john, which stores an object, which has its own properties and methods
+
+const people = {
+  john: {
+    name: 'John',
+    birthYear: 1990,
+    calcAge: function () {
+      return new Date().getFullYear() - this.birthYear;
+    }
+  }
+};
+ 
+console.log(people.john.calcAge());
+The same applies to the classList property, which stores an object — an instance of the DOMTokenList.
+
+The DOMTokenList is a special "interface" (like a class or constructor) that is used to represent space-separated list of different tokens from the DOM. In our case, tokens are the classes applied to an Html element. Simply, it's just a list of strings.
+
+The read-only property means you can only read a value assigned to this property, but not reassign it. The DOMTokenList is an object (reference type), which means you can modify it without reassignment. It's like with objects assigned to a const variable
+
+const john = {
+  name: 'John'
+};
+ 
+john.birthYear = 1990;
+I can add properties to the john variable even if it's a constant. Why? because there is no reassignment of the variable. I'm just modifying the object assigned to this variable, without reassignment.
+
+The term "API" can mean many things.
+
+***********************API's *************************
+1 of courses answer: 
+API stands for Application Programming Interface. It can have a slightly different meaning depending on the context, but generally, API exposes "something" to allow you to work with a complex system.
+
+For example, we can have a class with different properties and methods. Some of them are private and some of them are public. These public methods can be viewed as an API, so as an interface that allows us to work with that class.
+
+Another example are web APIs (for example, RESTful APIs) that expose resources through endpoints, for example, let's say there is an app about books that exposes /books endpoint
+
+www.example.com/books
+Sending a GET request to that /books endpoint would give us data about different books in the system.
+
+We also have something called Web APIs in the browser. These are functions exposed by browsers to work with different things, like canvas, geolocation, or local storage.
+
+element.src=`` is same as element.setAttribute("src",``). sor we direct use attributes as element properties in js
+
+classList.toggle(), we also have toggle method.
+
+doc.getElementById('no # and only id name') : more faster than querySelector
 

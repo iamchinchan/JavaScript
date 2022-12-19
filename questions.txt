@@ -26,4 +26,10 @@ console.log(`${[key][0]}`);
 // i want to print that object not string based on result
 question i asked Divesh on 1-Dec 2022
 
-->Array.isArray() : in this is Array a methid or a class?
+->Array.isArray() : in this is Array a method or a class?
+Array must be an js object and on whih isArray can be a method
+
+-> can we add fn declaration in the event listener as an event handler? so in short can we pass an fn declaration as an arguement to another fn? yes we can :tried my self
+
+-> live DOMTokenList collection? how a real only property like classList can have methods on top of that? soln added in notes
+

@@ -13,4 +13,5 @@
 -> try to use ctr+D to move to next occurence
 -> new keyword, and creating dynamic memory
 -> how non-primitive types can be changed/ mutated even after declared as const? for exmaple array and maps?
--> 
+-> web API's : Timers, Fetch
+-> live DOMTokenList collection
